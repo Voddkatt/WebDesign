@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="css/style.css"/>
 
+    <meta name="viewport" content="width=device-width", user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0>
+
   </head>
   <body>
     <!-- Header-menu -->
@@ -18,22 +21,28 @@
           <h1>Grizzly<b>Max</b></h1>
         </div>
 
-        <div class="menu">
+        <div class="menu" id="show-menu">
           <nav>
             <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Tutoriales</a></li>
-              <li class="menu-selected">
-                <a class="text-menu-selected" href="#">Blog</a>
-              </li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="#"> <i class="fa-solid fa-house"> </i>Inicio</a></li>
+              <li><a href="#"> <i class="fa-brands fa-youtube"> </i>Tutoriales</a></li>
+              <li class="menu-selected"><a class="text-menu-selected" href="#"><i class="fa-solid fa-folder"></i>Blog</a></li>
+              <li><a href="#"><i class="fa-regular fa-address-book"></i>Contacto</a></li>
             </ul>
           </nav>
         </div>
       </div>
+
+      <div id="icon-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
     </header>
 
     <!--Portada-->
+
+    <div class="container-all" id="move-content">
+
     <div class="container-cover">
       <div class="container-info-cover">
         <h1>¡Supera tus limites!</h1>
@@ -219,5 +228,8 @@
       </footer>
 
     </div>
+</div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
